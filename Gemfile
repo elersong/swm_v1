@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'upmin-admin'
 gem 'high_voltage'
 group :development do
   gem 'guard-bundler'
@@ -30,6 +31,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'sqlite3'
+  gem 'faker'
 end
 group :production do
   gem 'pg'
