@@ -4,13 +4,9 @@
     <div class="column">
       <table class="table">
         <tbody>
-          <tr>
-            <td>Decedent</td>
-            <td>Contact</td>
-          </tr>
-          <% @projects.each do |project| %>
+          <% @companies.each do |company| %>
             <tr>
-              <%= render project %>
+              <%= render company %>
             </tr>
           <% end %>
         </tbody>

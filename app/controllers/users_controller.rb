@@ -7,9 +7,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    unless @user == current_user
-      redirect_to :back, :alert => "Access denied."
-    end
+    
+    ##### Below is basic authorization, preventing the logged in user to see the profile of any other person
+    #unless @user == current_user
+    #  redirect_to :back, :alert => "Access denied."
+    #end
   end
 
 end

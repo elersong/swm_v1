@@ -1,0 +1,12 @@
+<h3>Project</h3>
+<p id="notice"><%= notice %></p>
+<p>ID: <%= @project.id %></p>
+<p>Decedent: <%= @project.decedent %></p>
+<p>Due: <%= timeago(@project.due_date) %> </p>
+<p>Contact: <%= link_to @project.user.name, @project.user %></p>
+<p>Created: <%= timeago(@project.created_at) %></p>
+<p>Last Updated: <%= timeago(@project.updated_at) %></p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

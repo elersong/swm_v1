@@ -13,6 +13,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'upmin-admin'
 gem 'high_voltage'
+gem 'time_difference'
 group :development do
   gem 'guard-bundler'
   gem 'guard-rails'
@@ -31,7 +32,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'sqlite3'
-  gem 'faker'
 end
 group :production do
   gem 'pg'

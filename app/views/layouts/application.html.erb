@@ -16,5 +16,10 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+    <%= javascript_tag do %>
+     $(function() {
+       $("time.timeago").timeago();
+     });
+   <% end %>
   </body>
 </html>
