@@ -2,3 +2,17 @@
 <p>Name: <%= @user.name if @user.name %></p>
 <p>Email: <%= @user.email if @user.email %></p>
 <p>Company: <%= @user.company.name if @user.company %></p>
+<table class="table">
+    <tbody>
+     <tr>
+         <td>Decedent</td>
+         <td>Due Date</td>
+     </tr>    
+      <% @projects.each do |project| %>
+        <tr>
+            <td><%= link_to project.decedent, project %></td>
+            <td><%= timeago(project.due_date) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>

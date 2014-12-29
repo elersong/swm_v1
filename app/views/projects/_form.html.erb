@@ -12,6 +12,12 @@
   <% end %>
 
   <div class="actions">
+    <%= f.label "Decedent Name" %>
+    <%= f.text_field :decedent %><br>
+    
+    <%= f.label "Select Due Date" %>
+    <%= f.datetime_field :due_date %><br>
+    
     <%= f.submit %>
   </div>
 <% end %>

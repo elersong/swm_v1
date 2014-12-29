@@ -7,6 +7,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @projects = Project.where(:user_id => params[:id])
+    #binding.pry
     
     ##### Below is basic authorization, preventing the logged in user to see the profile of any other person
     #unless @user == current_user
